@@ -32,9 +32,9 @@ if(end_flag==0) {// put your main code here, to run repeatedly:
       if(discharge_time - current_time > interval)
       {
         current_time = discharge_time;
-        Serial.print(start_discharging);
+        Serial.print(double(start_discharging/1000));
         Serial.print(";");
-        Serial.print(discharge_time);
+        Serial.print(double(discharge_time/1000));
         Serial.print(";");
         Serial.print(voltage_level);
         Serial.print(";\n");
