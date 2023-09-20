@@ -2,7 +2,7 @@ import serial
 
 flag_end = False
 arduino = serial.Serial("COM4",baudrate= 9600, timeout=1.5)
-f = open("Optima_Battery_8004_250vhhh.txt", "a")
+f = open("Results/Optima_Battery_8004_250vhhh.txt", "a")
 
 def read_data():
     data = arduino.readline()

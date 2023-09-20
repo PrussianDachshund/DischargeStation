@@ -15,7 +15,7 @@ void loop() {
 if(end_flag==0) {// put your main code here, to run repeatedly:
     float sensor_value = analogRead(0);
     float voltage_level = sensor_value*(25.0 / 1023.0);
-    voltage_level = 11;
+    //voltage_level = 11;
 
     if(voltage_level>10.5 && start_flag == 0) {
       start_flag = 1;
